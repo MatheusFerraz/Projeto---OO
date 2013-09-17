@@ -6,6 +6,15 @@ public class Apartamento{
 	private String tipo;
 	private int numero;
 	private int status;
+	private Hotel hotel;
+
+	public Hotel getHotel() {
+		return hotel;
+	}
+
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
+	}
 
 	//Constructor SEM PARÂMETROS
 	public Apartamento(){

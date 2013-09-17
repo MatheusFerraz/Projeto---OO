@@ -21,6 +21,17 @@ public class Funcionario {
 		this.email = "sem email";
 		this.telefone = "sem telefone";
 	}
+
+	//Construtor COM 2 PARÂMETROS
+	public Funcionario(int cpfFuncionario, int rgFuncionario){
+		this.cpf = cpfFuncionario;
+		this.rg = rgFuncionario;
+		this.salario = 0;
+		this.nome = "sem nome";
+		this.cargo = "sem cargo";
+		this.email = "sem email";
+		this.telefone = "sem telefone";
+	}
 	
 	//Constructor COM SETE PARÂMETROS
 	public Funcionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){

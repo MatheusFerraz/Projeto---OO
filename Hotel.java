@@ -1,11 +1,16 @@
 package hotelaria.func;
 
+import java.util.Scanner;
+
 public class Hotel{
 
+	Scanner input = new Scanner(System.in);
+	
 	private String nome;
 	private int cnpj;
 	private int qndApt;
 	private String telefone;
+	private Apartamento[] apartamentos = {};
 
 	//Constructor SEM PARÂMETROS
 	public Hotel(){
@@ -13,6 +18,14 @@ public class Hotel{
 	this.cnpj =0;
 	this.qndApt=0;
 	this.telefone = "sem telefone";
+	}
+
+	public Apartamento[] getApartamentos() {
+		return apartamentos;
+	}
+
+	public void setApartamentos(Apartamento[] apartamentos) {
+		this.apartamentos = apartamentos;
 	}
 
 	//Constructor COM TODOS OS PARÂMETROS
@@ -23,8 +36,6 @@ public class Hotel{
 	this.telefone = telefoneHotel;
 	}
 	
-	public static void main(String[] args){
-	}
 
 	//Métodos de Acesso e Modificação
 	public String getNome(){
@@ -62,7 +73,21 @@ public class Hotel{
 	}
 
 	//Método cadastrarHotel
-	public void cadastrarHotel(String nomeHotel,int cnpjHotel, int qndAptHotel, String telefoneHotel){
+	public void cadastrarHotel(){
+	System.out.println("Para Cadastar um novo hotel é preciso dos seguinte dados:");
+	
+	System.out.print("Nome do Hotel: ");
+	String nomeHotel = input.nextLine();
+	
+	System.out.print("CNPJ do Hotel: ");
+	int cnpjHotel = input.nextInt();
+			
+	System.out.print("Quantos Apartamento o Hotel tem: ");
+	int qndAptHotel = input.nextInt();
+	
+	System.out.print("Telefone: ");
+	String telefoneHotel = input.nextLine();
+	
 	this.nome = nomeHotel;
 	this.cnpj =cnpjHotel;
 	this.qndApt=qndAptHotel;

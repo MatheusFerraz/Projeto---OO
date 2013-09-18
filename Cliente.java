@@ -9,7 +9,8 @@ public class Cliente {
 	private String telefone;
 	private String email;
 	private int entrada;
-	private int saida; 
+	private int saida;
+	Apartamento apartamento;
 	
 	//Constructor SEM PARÂMETROS
 	public Cliente() 
@@ -90,6 +91,15 @@ public class Cliente {
 
 	public void setSaida(int saida) {
 		this.saida = saida;
+	}
+	
+	
+	public Apartamento getApartamento() {
+		return apartamento;
+	}
+
+	public void setApartamento(Apartamento apartamento) {
+		this.apartamento = apartamento;
 	}
 
 	//Método cadastrarCliente

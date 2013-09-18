@@ -7,6 +7,7 @@ public class Apartamento{
 	private int numero;
 	private int status;
 	private Hotel hotel;
+	Cliente cliente;
 
 	public Hotel getHotel() {
 		return hotel;
@@ -53,6 +54,15 @@ public class Apartamento{
 
 	public void setStatus(int statusApt){
 	status =statusApt;
+	}
+	
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	//Método cadastrarApt

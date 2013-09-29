@@ -10,6 +10,7 @@ public class Funcionario {
 	private String cargo;
 	private String email;
 	private String telefone;
+	private Hotel hotel;
 	
 	//Constructor SEM PARÂMETROS
 	public Funcionario() {
@@ -101,6 +102,14 @@ public class Funcionario {
 		this.telefone = telefone;
 	}
 	
+	public Hotel getHotel() {
+		return hotel;
+	}
+
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
+	}
+
 	//Método que cadastra um funcionario
 	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
 		this.cpf = cpfFuncionario;

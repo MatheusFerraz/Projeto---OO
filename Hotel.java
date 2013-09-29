@@ -11,6 +11,7 @@ public class Hotel{
 	private int qndApt;
 	private String telefone;
 	private Apartamento[] apartamentos = {};
+	private Funcionario[] funcionarios = {};
 
 	//Constructor SEM PARÂMETROS
 	public Hotel(){
@@ -18,14 +19,6 @@ public class Hotel{
 	this.cnpj =0;
 	this.qndApt=0;
 	this.telefone = "sem telefone";
-	}
-
-	public Apartamento[] getApartamentos() {
-		return apartamentos;
-	}
-
-	public void setApartamentos(Apartamento[] apartamentos) {
-		this.apartamentos = apartamentos;
 	}
 
 	//Constructor COM TODOS OS PARÂMETROS
@@ -70,6 +63,22 @@ public class Hotel{
 
 	public void setTelefone(String telefoneHotel){
 	telefone = telefoneHotel;
+	}
+	
+	public Apartamento[] getApartamentos() {
+		return apartamentos;
+	}
+
+	public void setApartamentos(Apartamento[] apartamentos) {
+		this.apartamentos = apartamentos;
+	}
+	
+	public Funcionario[] getFuncionarios() {
+		return funcionarios;
+	}
+
+	public void setFuncionarios(Funcionario[] funcionarios) {
+		this.funcionarios = funcionarios;
 	}
 
 	//Método cadastrarHotel

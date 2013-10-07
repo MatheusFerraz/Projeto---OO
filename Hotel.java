@@ -6,12 +6,12 @@ public class Hotel{
 
 	Scanner input = new Scanner(System.in);
 	
-	private String nome;
-	private int cnpj;
-	private int qndApt;
-	private String telefone;
-	private Apartamento[] apartamentos = {};
-	private Funcionario[] funcionarios = {};
+	protected String nome;
+	protected int cnpj;
+	protected int qndApt;
+	protected String telefone;
+	protected Apartamento[] apartamentos = {};
+	protected Funcionario[] funcionarios = {};
 
 	//Constructor SEM PARÂMETROS
 	public Hotel(){

@@ -3,13 +3,13 @@ package hotelaria.func;
 public class Cliente {
 
 	//Especificando atributos
-	private String nome;
-	private int rg;
-	private int cpf;
-	private String telefone;
-	private String email;
-	private int entrada;
-	private int saida;
+	protected String nome;
+	protected int rg;
+	protected int cpf;
+	protected String telefone;
+	protected String email;
+	protected int entrada;
+	protected int saida;
 	Apartamento apartamento;
 	
 	//Constructor SEM PARÂMETROS

@@ -3,14 +3,15 @@ package hotelaria.func;
 public class Funcionario {
 	
 	//Especificando Atributos da Classe Funcionario
-	private int cpf;
-	private int rg;
-	private float salario;
-	private String nome;
-	private String cargo;
-	private String email;
-	private String telefone;
-	private Hotel hotel;
+	protected int cpf;
+	protected int rg;
+	protected float salario;
+	protected String nome;
+	protected String cargo;
+	protected String email;
+	protected String telefone;
+	protected String endereco;
+	protected Hotel hotel;
 	
 	//Constructor SEM PARÂMETROS
 	public Funcionario() {
@@ -21,21 +22,11 @@ public class Funcionario {
 		this.cargo = "sem cargo";
 		this.email = "sem email";
 		this.telefone = "sem telefone";
-	}
-
-	//Construtor COM 2 PARÂMETROS
-	public Funcionario(int cpfFuncionario, int rgFuncionario){
-		this.cpf = cpfFuncionario;
-		this.rg = rgFuncionario;
-		this.salario = 0;
-		this.nome = "sem nome";
-		this.cargo = "sem cargo";
-		this.email = "sem email";
-		this.telefone = "sem telefone";
+		this.endereco = "sem endereco";
 	}
 	
 	//Constructor COM SETE PARÂMETROS
-	public Funcionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
+	public Funcionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
 		this.salario = salarioFuncionario;
@@ -43,6 +34,7 @@ public class Funcionario {
 		this.cargo = cargoFuncionario;
 		this.email = emailFuncionario;
 		this.telefone = telefoneFuncionario;
+		this.endereco = enderecoFuncionario;
 	}
 
 	//Métodos de Acesso e Modificação

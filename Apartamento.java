@@ -3,10 +3,10 @@ package hotelaria.func;
 public class Apartamento{
 
 	//Especificação dos atributos
-	private String tipo;
-	private int numero;
-	private int status;
-	private Hotel hotel;
+	protected String tipo;
+	protected int numero;
+	protected int status;
+	protected Hotel hotel;
 	Cliente cliente;
 
 	public Hotel getHotel() {

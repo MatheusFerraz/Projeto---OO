@@ -112,6 +112,7 @@ public class Funcionario {
 
 	//Método que cadastra um funcionario
 	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
+		//Esse método não será detalhado no momento
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
 		this.salario = salarioFuncionario;
@@ -123,6 +124,7 @@ public class Funcionario {
 	
 	//Método que exclui um funcionario
 	public int excluirFuncionario(){
+		//Esse método não será detalhado nesse momento
 		int veracidade = 0;
 		return veracidade;
 	}

@@ -12,7 +12,7 @@ public class Principal {
 		
 		System.out.println("Bem-vindo ao gerenciador de Hotel");
 		System.out.println("Escolha um opção abaixo");
-		System.out.println("1-Cadastrar Novo Hotel.\n2-Cadastrar funcionario.\n3-Cadastrar APartamento.\n4-Cadastrar Cliente.\n");
+		System.out.println("1-Cadastrar Novo Hotel.\n2-Cadastrar Funcionario.\n3-Cadastrar Apartamento.\n4-Cadastrar Cliente.\n");
 		
 		escolha = input.nextInt();
 		

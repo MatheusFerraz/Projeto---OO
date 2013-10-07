@@ -105,6 +105,7 @@ public class Hotel{
 
 	//Método excluirHotel
 	public int excluirHotel(String nomeHotel){
+		//Esse método não será detalhado no momento
 	int veracidade=0;
 	return veracidade;
 	}

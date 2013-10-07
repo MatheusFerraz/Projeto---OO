@@ -116,6 +116,7 @@ public class Cliente {
 	//Método excluirCliente
 	public void excluirCliente(String nomeHotel, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida)
 	{
+		//Esse método não será totalmente detalhado agora
 		this.nome = nomeHotel;
 		this.rg = RG;
 		this.cpf = CPF;

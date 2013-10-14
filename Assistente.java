@@ -24,4 +24,16 @@ public class Assistente extends Funcionario {
 	public void setEspecialidade(String especialidade){
 		this.especialidade = especialidade;
 	}
+	
+	//Método mais especializado para o cálculo do Salário Bruto de um assistente
+	public double calcularSalarioBruto(){
+		if(this.especialidade == "Auxiliar Geral"){
+			this.setSalarioBruto(850);
+			return 850;
+		}
+		else{
+			this.setSalarioBruto(600);
+			return 600;
+		}
+	}
 }

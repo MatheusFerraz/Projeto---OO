@@ -121,7 +121,7 @@ public class Funcionario {
 		return veracidade;
 	}
 	
-	//Método para exibir o tempo de prestação de serviços de um dado funcionário
+	//Método para calcular Salario Bruto
 	public double calcularSalarioBruto(){
 		return this.salarioBruto;
 	}

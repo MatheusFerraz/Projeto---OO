@@ -5,7 +5,7 @@ public class Funcionario {
 	//Especificando Atributos da Classe Funcionario
 	protected int cpf;
 	protected int rg;
-	protected float salario;
+	protected float salarioBruto;
 	protected String nome;
 	protected String cargo;
 	protected String email;
@@ -17,7 +17,7 @@ public class Funcionario {
 	public Funcionario() {
 		this.cpf = 0;
 		this.rg = 0;
-		this.salario = 0;
+		this.salarioBruto = 0;
 		this.nome = "sem nome";
 		this.cargo = "sem cargo";
 		this.email = "sem email";
@@ -29,7 +29,7 @@ public class Funcionario {
 	public Funcionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
-		this.salario = salarioFuncionario;
+		this.salarioBruto = salarioFuncionario;
 		this.nome = nomeFuncionario;
 		this.cargo = cargoFuncionario;
 		this.email = emailFuncionario;
@@ -54,12 +54,12 @@ public class Funcionario {
 		this.rg = rg;
 	}
 
-	public float getSalario() {
-		return salario;
+	public float getSalarioBruto() {
+		return salarioBruto;
 	}
 
-	public void setSalario(float salario) {
-		this.salario = salario;
+	public void setSalarioBruto(float salarioBruto) {
+		this.salarioBruto = salarioBruto;
 	}
 
 	public String getNome() {
@@ -107,7 +107,7 @@ public class Funcionario {
 		//Esse método não será detalhado no momento
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
-		this.salario = salarioFuncionario;
+		this.salarioBruto = salarioFuncionario;
 		this.nome = nomeFuncionario;
 		this.cargo = cargoFuncionario;
 		this.email = emailFuncionario;
@@ -119,5 +119,10 @@ public class Funcionario {
 		//Esse método não será detalhado nesse momento
 		int veracidade = 0;
 		return veracidade;
+	}
+	
+	//Método para exibir o tempo de prestação de serviços de um dado funcionário
+	public double calcularSalarioBruto(){
+		return this.salarioBruto;
 	}
 }

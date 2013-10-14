@@ -24,4 +24,12 @@ public class Gerente extends Funcionario {
 	public void setBonusMensal(double bonusMensal) {
 		this.bonusMensal = bonusMensal;
 	}
+	
+	//Método mais especializado para cálculo do Salário Bruto de um Gerente
+	public double calcularSalarioBruto(){
+		double BM = this.bonusMensal;
+		double salarioBruto = 4500 + BM;
+		this.setSalarioBruto(salarioBruto);
+		return salarioBruto;
+	}
 }

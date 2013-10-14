@@ -6,7 +6,7 @@ public class Assistente extends Funcionario {
 	protected String especialidade;
 	
 	//Constructor COM TODOS OS PARÂMETROS
-	public Assistente(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
+	public Assistente(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
 			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, String especialidadeFuncionario){
 		
 		//Usando super(...)

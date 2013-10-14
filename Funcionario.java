@@ -5,7 +5,7 @@ public class Funcionario {
 	//Especificando Atributos da Classe Funcionario
 	protected int cpf;
 	protected int rg;
-	protected float salarioBruto;
+	protected double salarioBruto;
 	protected String nome;
 	protected String cargo;
 	protected String email;
@@ -26,7 +26,7 @@ public class Funcionario {
 	}
 	
 	//Constructor COM SETE PARÂMETROS
-	public Funcionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
+	public Funcionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
 		this.salarioBruto = salarioFuncionario;
@@ -54,11 +54,11 @@ public class Funcionario {
 		this.rg = rg;
 	}
 
-	public float getSalarioBruto() {
+	public double getSalarioBruto() {
 		return salarioBruto;
 	}
 
-	public void setSalarioBruto(float salarioBruto) {
+	public void setSalarioBruto(double salarioBruto) {
 		this.salarioBruto = salarioBruto;
 	}
 
@@ -103,7 +103,7 @@ public class Funcionario {
 	}
 
 	//Método que cadastra um funcionario
-	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
+	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
 		//Esse método não será detalhado no momento
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;

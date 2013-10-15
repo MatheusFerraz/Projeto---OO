@@ -1,6 +1,5 @@
 package hotelaria.func;
 
-import java.util.Scanner;
 
 public class Principal {
 

@@ -1,11 +1,11 @@
 package hotelaria.func;
 
-public class Apartamento{
+public class Apartamento {
 
 	//Especificação dos atributos
 	protected String tipo;
 	protected int numero;
-	protected int status;
+	protected String status;
 	protected Hotel hotel;
 	Cliente cliente;
 
@@ -21,11 +21,11 @@ public class Apartamento{
 	public Apartamento(){
 		this.tipo = "sem tipo";
 		this.numero = 0;
-		this.status = 0;
+		this.status = "sem informacao";
 	}
 
 	//Constructor COM TODOS OS PARÂMETROS
-	public Apartamento(String tipoApt,int numeroApt, int statusApt){
+	public Apartamento(String tipoApt,int numeroApt, String statusApt){
 		this.tipo = tipoApt;
 		this.numero =numeroApt;
 		this.status = statusApt;
@@ -48,11 +48,11 @@ public class Apartamento{
 	numero =numeroApt;
 	}
 
-	public int getStatus(){
+	public String getStatus(){
 	return status;
 	}
 
-	public void setStatus(int statusApt){
+	public void setStatus(String statusApt){
 	status =statusApt;
 	}
 	
@@ -66,17 +66,16 @@ public class Apartamento{
 	}
 
 	//Método cadastrarApt
-	public int cadastrarApt(String tipoApt,int numeroApt, int statusApt){
-	tipo = tipoApt;
-	numero =numeroApt;
-	status = statusApt;
-	int veracidade = 0;
-	return veracidade;
+	public void cadastrarApt(String tipoApt,int numeroApt, String statusApt){
+		
+	//Dependência entre Apartamento e ConexaoBancoDados
+	System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +
+	"visando conectar o banco para entrada dos dados de cadastro do apartamento.");
+	ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
+	
+	this.tipo = tipoApt;
+	this.numero =numeroApt;
+	this.status = statusApt;
 	}
 
-	//Método excluirApt
-	public int excluirApt(String nomeHotel){
-	int veracidade=0;
-	return veracidade;
-	}
 }

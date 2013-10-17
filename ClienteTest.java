@@ -10,100 +10,45 @@ public class ClienteTest {
 
 	@Before
 	public void setUp() throws Exception {
+		System.out.println("Iniciando...");
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	}
-
-	@Test
-	public void testCliente() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testClienteStringIntIntStringStringIntInt() {
-		fail("Not yet implemented");
+		System.out.println("Finalizando...");
 	}
 
 	@Test
 	public void testGetNome() {
-		fail("Not yet implemented");
+		Cliente client = new Cliente("Jorge", 3095252, 11111111, "(61) 3964-9628", "jorge@gmail.com");
+		assertEquals(client.getNome(), "Jorge");
 	}
 
-	@Test
-	public void testSetNome() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetRg() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetRg() {
-		fail("Not yet implemented");
+		Cliente client = new Cliente("Jorge", 3095252, 11111111, "(61) 3964-9628", "jorge@gmail.com");
+		assertEquals(client.getRg(), 3095252);
 	}
 
 	@Test
 	public void testGetCpf() {
-		fail("Not yet implemented");
+		Cliente client = new Cliente("Jorge", 3095252, 11111111, "(61) 3964-9628", "jorge@gmail.com");
+		assertEquals(client.getCpf(), 11111111);
 	}
 
-	@Test
-	public void testSetCpf() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetTelefone() {
-		fail("Not yet implemented");
+		Cliente client = new Cliente("Jorge", 3095252, 11111111, "(61) 3964-9628", "jorge@gmail.com");
+		assertEquals(client.getTelefone(), "(61) 3964-9628");
 	}
 
-	@Test
-	public void testSetTelefone() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetEmail() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetEmail() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetEntrada() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetEntrada() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetSaida() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetSaida() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testCadastarCliente() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testExcluirCliente() {
-		fail("Not yet implemented");
+		Cliente client = new Cliente("Jorge", 3095252, 11111111, "(61) 3964-9628", "jorge@gmail.com");
+		assertEquals(client.getEmail(), "jorge@gmail.com");
 	}
 
 }

@@ -10,100 +10,55 @@ public class FuncionarioTest {
 
 	@Before
 	public void setUp() throws Exception {
+		System.out.println("Iniciando...");
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	}
-
-	@Test
-	public void testFuncionario() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testFuncionarioIntIntFloatStringStringStringString() {
-		fail("Not yet implemented");
+		System.out.println("Finalizando...");
 	}
 
 	@Test
 	public void testGetCpf() {
-		fail("Not yet implemented");
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getCpf(), 11111111);
 	}
 
-	@Test
-	public void testSetCpf() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetRg() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetRg() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGetSalario() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetSalario() {
-		fail("Not yet implemented");
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getRg(), 2024320);
 	}
 
 	@Test
 	public void testGetNome() {
-		fail("Not yet implemented");
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getNome(), "James");
 	}
-
-	@Test
-	public void testSetNome() {
-		fail("Not yet implemented");
-	}
-
+	
 	@Test
 	public void testGetCargo() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetCargo() {
-		fail("Not yet implemented");
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getCargo(), "Gerente");
 	}
 
 	@Test
 	public void testGetEmail() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetEmail() {
-		fail("Not yet implemented");
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getEmail(), "james@gmail.com");
 	}
 
 	@Test
 	public void testGetTelefone() {
-		fail("Not yet implemented");
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getTelefone(), "(62) 3967-2618");
 	}
-
+	
 	@Test
-	public void testSetTelefone() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testCadastrarFuncionario() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testExcluirFuncionario() {
-		fail("Not yet implemented");
+	public void testGetEndereco(){
+		Funcionario func = new Funcionario(11111111, 2024320, 4500, "James", "Gerente", "james@gmail.com", "(62) 3967-2618", "Qd 201 Conj 17 Cs 02");
+		assertEquals(func.getEndereco(), "Qd 201 Conj 17 Cs 02");
 	}
 
 }

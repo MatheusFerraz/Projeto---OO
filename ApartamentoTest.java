@@ -10,60 +10,33 @@ public class ApartamentoTest {
 
 	@Before
 	public void setUp() throws Exception {
+		System.out.println("Iniciando...");
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	}
-
-	@Test
-	public void testApartamento() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testApartamentoStringIntInt() {
-		fail("Not yet implemented");
+		System.out.println("Finalizando...");
 	}
 
 	@Test
 	public void testGetTipo() {
-		fail("Not yet implemented");
+		Apartamento apart = new Apartamento("Suíte Presidencial", 258, "Ocupado");
+		assertEquals(apart.getTipo(), "Suíte Presidencial");
 	}
 
-	@Test
-	public void testSetTipo() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetNumero() {
-		fail("Not yet implemented");
+		Apartamento apart = new Apartamento("Suíte Presidencial", 258, "Ocupado");
+		assertEquals(apart.getNumero(), 258);
 	}
 
-	@Test
-	public void testSetNumero() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetStatus() {
-		fail("Not yet implemented");
+		Apartamento apart = new Apartamento("Suíte Presidencial", 258, "Ocupado");
+		assertEquals(apart.getStatus(), "Ocupado");
 	}
 
-	@Test
-	public void testSetStatus() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testCadastrarApt() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testExcluirApt() {
-		fail("Not yet implemented");
-	}
 
 }

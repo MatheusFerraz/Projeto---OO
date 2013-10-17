@@ -34,6 +34,15 @@ public class Principal {
 		}*/
 		
 		
+		//Testando a Dependência entre Apartamento e ConexaoBancoDados
+		
+		/*Instanciando um objeto da classe Apartamento
+		Apartamento apart = new Apartamento();
+		
+		//Chamando método para cadastrar Apartamento
+		apart.cadastrarApt("Suíde Presidencial", 258, 0);*/
+
+		
 		/*Testando a primeira situação de polimorfismo
 		
 		//Declarando um Funcionario
@@ -89,6 +98,8 @@ public class Principal {
 		//Informando os valores
 		System.out.println("\nO salario bruto desse funcionario é igual a: ");
 		System.out.print(salarioBrutoF);*/
+		
+		
 	}
 }
 	

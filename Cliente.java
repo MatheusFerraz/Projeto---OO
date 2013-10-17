@@ -13,8 +13,7 @@ public class Cliente {
 	Apartamento apartamento;
 	
 	//Constructor SEM PARÂMETROS
-	public Cliente() 
-	{
+	public Cliente() {
 		this.nome = "Sem nome";
 		this.rg = 0;
 		this.cpf = 0;
@@ -24,10 +23,20 @@ public class Cliente {
 		this.saida = 0;
 	}
 	
+	//Construtor COM QUATRO PARÂMETROS
+	public Cliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente){
+		this.nome = nomeCliente;
+		this.rg = RG;
+		this.cpf = CPF;
+		this.telefone =numTelefone;
+		this.email = emailCliente;
+		this.entrada = 0;
+		this.saida = 0;
+	}
+	
 	//Constructor COM TODOS OS PARÂMETROS
-	public Cliente(String nomeHotel, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida)
-	{
-		this.nome = nomeHotel;
+	public Cliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida){
+		this.nome = nomeCliente;
 		this.rg = RG;
 		this.cpf = CPF;
 		this.telefone = numTelefone;
@@ -103,8 +112,13 @@ public class Cliente {
 	}
 
 	//Método cadastrarCliente
-	public void cadastarCliente(String nomeHotel, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida)
-	{
+	public void cadastarCliente(String nomeHotel, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida){
+		
+		//Dependência entre Cliente e ConexaoBancoDados
+		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +
+		"visando conectar o banco para entrada dos dados de cadastro do cliente.");
+		ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
+		
 		this.nome = nomeHotel;
 		this.rg = RG;
 		this.cpf = CPF;
@@ -113,16 +127,5 @@ public class Cliente {
 		this.entrada = horaEntrada;
 		this.saida = horaSaida;
 	}
-	//Método excluirCliente
-	public void excluirCliente(String nomeHotel, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida)
-	{
-		//Esse método não será totalmente detalhado agora
-		this.nome = nomeHotel;
-		this.rg = RG;
-		this.cpf = CPF;
-		this.telefone = numTelefone;
-		this.email = emailCliente;
-		this.entrada = horaEntrada;
-		this.saida = horaSaida;
-	}
+	
 }

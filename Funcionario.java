@@ -1,6 +1,6 @@
 package hotelaria.func;
 
-public class Funcionario {
+public class Funcionario extends ServidorPrivado {
 	
 	//Especificando Atributos da Classe Funcionario
 	protected int cpf;
@@ -94,6 +94,14 @@ public class Funcionario {
 		this.telefone = telefone;
 	}
 	
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
 	public Hotel getHotel() {
 		return hotel;
 	}
@@ -104,7 +112,12 @@ public class Funcionario {
 
 	//Método que cadastra um funcionario
 	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
-		//Esse método não será detalhado no momento
+		
+		//Dependência entre Funcionario e ConexaoBancoDados
+		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +
+		"visando conectar o banco para entrada dos dados de cadastro do funcionário.");
+		ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
+		
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
 		this.salarioBruto = salarioFuncionario;
@@ -113,13 +126,7 @@ public class Funcionario {
 		this.email = emailFuncionario;
 		this.telefone = telefoneFuncionario;
 	}
-	
-	//Método que exclui um funcionario
-	public int excluirFuncionario(){
-		//Esse método não será detalhado nesse momento
-		int veracidade = 0;
-		return veracidade;
-	}
+
 	
 	//Método para calcular Salario Bruto
 	public double calcularSalarioBruto(){

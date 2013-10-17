@@ -10,70 +10,35 @@ public class HotelTest {
 
 	@Before
 	public void setUp() throws Exception {
+		System.out.println("Iniciando...");
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	}
-
-	@Test
-	public void testHotel() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testHotelStringIntIntString() {
-		fail("Not yet implemented");
+		System.out.println("Finalizando...");
 	}
 
 	@Test
 	public void testGetNome() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetNome() {
-		fail("Not yet implemented");
+		Hotel hotel = new Hotel("Monreale", 25678941, 100, "(62) 9647-2584");
+		assertEquals(hotel.getNome(), "Monreale");
 	}
 
 	@Test
 	public void testGetCnpj() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetCnpj() {
-		fail("Not yet implemented");
+		Hotel hotel = new Hotel("Monreale", 25678941, 100, "(62) 9647-2584");
+		assertEquals(hotel.getCnpj(), 25678941);
 	}
 
 	@Test
 	public void testGetQndApt() {
-		fail("Not yet implemented");
+		Hotel hotel = new Hotel("Monreale", 25678941, 100, "(62) 9647-2584");
+		assertEquals(hotel.getQndApt(), 100);
 	}
-
-	@Test
-	public void testSetQndApt() {
-		fail("Not yet implemented");
-	}
-
+	
 	@Test
 	public void testGetTelefone() {
-		fail("Not yet implemented");
+		Hotel hotel = new Hotel("Monreale", 25678941, 100, "(62) 9647-2584");
+		assertEquals(hotel.getTelefone(), "(62) 9647-2584");
 	}
-
-	@Test
-	public void testSetTelefone() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testCadastrarHotel() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testExcluirHotel() {
-		fail("Not yet implemented");
-	}
-
 }

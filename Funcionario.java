@@ -3,7 +3,7 @@ package hotelaria.func;
 public class Funcionario extends ServidorPrivado {
 	
 	//Especificando Atributos da Classe Funcionario
-	protected int cpf;
+	protected double cpf;
 	protected int rg;
 	protected double salarioBruto;
 	protected String nome;
@@ -26,7 +26,7 @@ public class Funcionario extends ServidorPrivado {
 	}
 	
 	//Constructor COM SETE PARÂMETROS
-	public Funcionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
+	public Funcionario(double cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
 		this.salarioBruto = salarioFuncionario;
@@ -38,7 +38,7 @@ public class Funcionario extends ServidorPrivado {
 	}
 
 	//Métodos de Acesso e Modificação
-	public int getCpf() {
+	public double getCpf() {
 		return cpf;
 	}
 
@@ -111,7 +111,7 @@ public class Funcionario extends ServidorPrivado {
 	}
 
 	//Método que cadastra um funcionario
-	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
+	public void cadastrarFuncionario(double cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
 		
 		//Dependência entre Funcionario e ConexaoBancoDados
 		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +

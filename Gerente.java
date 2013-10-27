@@ -1,12 +1,16 @@
 package hotelaria.func;
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements ComunicacaoSup {
 	
 	//Especificando atributos adicionais
 	protected double bonusMensal;
 	
+	//Construtor vazio
+	public Gerente(){
+	}
+	
 	//Constructor COM TODOS OS PARÂMETROS
-	public Gerente(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
+	public Gerente(double cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
 			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, double bonusMensalFuncionario){
 		
 		//Usando super(...)
@@ -32,4 +36,18 @@ public class Gerente extends Funcionario {
 		this.setSalarioBruto(salarioBruto);
 		return salarioBruto;
 	}
+
+	@Override
+	public void postarMensagem(String mensagem, String[] contatos) {
+		Mensagem msg = new Mensagem();
+		msg.postarMen(mensagem,this.nome,contatos);
+	}
+
+	@Override
+	public void postarInformativoDoHotel(String informativoDoHotel,
+			String[] contatos) {
+		Mensagem msg2 = new Mensagem();
+		msg2.postarInfo(informativoDoHotel, this.nome, contatos);
+		
+	}	
 }

@@ -6,7 +6,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		
-		//Opção que estará disponível mais a frente
+		/**Opção que estará disponível mais a frente*/
 		/*Scanner input = new Scanner(System.in);
 
 		int escolha;
@@ -34,7 +34,7 @@ public class Principal {
 		}*/
 		
 		
-		//Testando a Dependência entre Apartamento e ConexaoBancoDados
+		/**Testando a Dependência entre Apartamento e ConexaoBancoDados*/
 		
 		/*Instanciando um objeto da classe Apartamento
 		Apartamento apart = new Apartamento();
@@ -43,9 +43,9 @@ public class Principal {
 		apart.cadastrarApt("Suíde Presidencial", 258, 0);*/
 
 		
-		/*Testando a primeira situação de polimorfismo
+		/**Testando a primeira situação de polimorfismo*/
 		
-		//Declarando um Funcionario
+		/*Declarando um Funcionario
 		Funcionario funcionario;
 		
 		//Instanciando um objeto da Classe Assitente
@@ -62,9 +62,9 @@ public class Principal {
 		System.out.print(salarioBrutoF);*/
 		
 		
-		/*Testando a segunda situação de polimorfismo
+		/**Testando a segunda situação de polimorfismo*/
 		
-		//Declarando um Funcionario
+		/*Declarando um Funcionario
 		Funcionario funcionario;
 		
 		//Instanciando um objeto da Classe Camareira
@@ -81,9 +81,9 @@ public class Principal {
 		System.out.print(salarioBrutoF);*/
 		
 		
-		/*Testando a terceira situação de polimorfismo
+		/**Testando a terceira situação de polimorfismo*/
 		
-		//Declarando um Funcionario
+		/*Declarando um Funcionario
 		Funcionario funcionario;
 		
 		//Instanciando um objeto da Classe Gerente
@@ -99,7 +99,18 @@ public class Principal {
 		System.out.println("\nO salario bruto desse funcionario é igual a: ");
 		System.out.print(salarioBrutoF);*/
 		
+		/**Testando a implementação da interface*/
 		
+		/*Instanciando um objeto da Classe Gerente
+		Gerente gerent = new Gerente(11111111, 3095252, 4500, "Jorge", "Gerente", "jorge@gmail.com", "(61) 3333-1919", "QD 201 CONJ 17 CS 02", 500);
+		
+		//Chamada do método para postarMensagem
+		String[] funcionarios = {"Amélia", "James", "Cormane", "Gustavo", "Carlos", "Janice", "Pedro"};
+		gerent.postarMensagem("Preciso que você compareça a sala de reunião.", funcionarios);
+		
+		//Chamada do método para postarInformativoDoHotel
+		String[] funcionarios2 = {"Amélia", "James", "Cormane", "Gustavo", "Carlos", "Janice", "Pedro", "Carmelo", "Ovanda", "Aurenice", "Gisele"};
+		gerent.postarInformativoDoHotel("Durante esse mês de Novembro, haverá diversas palestras sobre hospitalidade para melhoria dos nossos serviços. Não perca a oportunidade! Sejam os melhores.",funcionarios2);*/	
 	}
 }
 	

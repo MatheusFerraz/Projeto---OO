@@ -11,7 +11,7 @@ public class Funcionario extends ServidorPrivado {
 	protected String email;
 	protected String telefone;
 	protected String endereco;
-	protected Hotel hotel;
+	protected Hotel hotel;//Composição entre Hotel e Funcionário
 	
 	//Constructor SEM PARÂMETROS
 	public Funcionario() {

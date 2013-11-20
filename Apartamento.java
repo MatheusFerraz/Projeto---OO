@@ -6,8 +6,8 @@ public class Apartamento {
 	protected String tipo;
 	protected int numero;
 	protected String status;
-	protected Hotel hotel;
-	Cliente cliente;
+	protected Hotel hotel;//Composição entre Hotel e Apartamento
+	Cliente cliente;//Associação entre Apartamento e Cliente
 
 	public Hotel getHotel() {
 		return hotel;
@@ -77,5 +77,4 @@ public class Apartamento {
 	this.numero =numeroApt;
 	this.status = statusApt;
 	}
-
 }

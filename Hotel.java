@@ -10,14 +10,14 @@ public class Hotel{
 	protected int cnpj;
 	protected int qndApt;
 	protected String telefone;
-	protected Apartamento[] apartamentos = {};
-	protected Funcionario[] funcionarios = {};
+	protected Apartamento[] apartamentos = {};//Composição entre Hotel e Apartamento
+	protected Funcionario[] funcionarios = {};//Composição entre Hotel e Funcionario
 
 	//Constructor SEM PARÂMETROS
 	public Hotel(){
 	this.nome ="Sem nome";
-	this.cnpj =0;
-	this.qndApt=0;
+	this.cnpj = 0;
+	this.qndApt= 0;
 	this.telefone = "sem telefone";
 	}
 
@@ -102,5 +102,4 @@ public class Hotel{
 	this.qndApt=qndAptHotel;
 	this.telefone = telefoneHotel;
 	}
-
 }

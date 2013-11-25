@@ -8,8 +8,8 @@ public class Cliente {
 	private int cpf;
 	private String telefone;
 	private String email;
-	private int entrada;
-	private int saida;
+	private String entrada;
+	private String saida;
 	Apartamento apartamento;//Associação entre Apartamento e Cliente
 	
 	//Constructor SEM PARÂMETROS
@@ -19,8 +19,8 @@ public class Cliente {
 		this.cpf = 0;
 		this.telefone = "sem telefone";
 		this.email = "sem email";
-		this.entrada = 0;
-		this.saida = 0;
+		this.entrada = "sem entrada";
+		this.saida = "sem saida";
 	}
 	
 	//Construtor COM QUATRO PARÂMETROS
@@ -30,12 +30,12 @@ public class Cliente {
 		this.cpf = CPF;
 		this.telefone =numTelefone;
 		this.email = emailCliente;
-		this.entrada = 0;
-		this.saida = 0;
+		this.entrada = "sem entrada";
+		this.saida = "sem saida";
 	}
 	
 	//Constructor COM TODOS OS PARÂMETROS
-	public Cliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida){
+	public Cliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente, String horaEntrada, String horaSaida){
 		this.nome = nomeCliente;
 		this.rg = RG;
 		this.cpf = CPF;
@@ -86,19 +86,19 @@ public class Cliente {
 		this.email = email;
 	}
 
-	public int getEntrada() {
+	public String getEntrada() {
 		return entrada;
 	}
 
-	public void setEntrada(int entrada) {
+	public void setEntrada(String entrada) {
 		this.entrada = entrada;
 	}
 
-	public int getSaida() {
+	public String getSaida() {
 		return saida;
 	}
 
-	public void setSaida(int saida) {
+	public void setSaida(String saida) {
 		this.saida = saida;
 	}
 	
@@ -112,14 +112,14 @@ public class Cliente {
 	}
 
 	//Método cadastrarCliente
-	public void cadastarCliente(String nomeHotel, int RG, int CPF, String numTelefone, String emailCliente, int horaEntrada, int horaSaida){
+	public void cadastarCliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente, String horaEntrada, String horaSaida){
 		
 		//Dependência entre Cliente e ConexaoBancoDados
-		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +
+		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +  
 		"visando conectar o banco para entrada dos dados de cadastro do cliente.");
 		ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
 		
-		this.nome = nomeHotel;
+		this.nome = nomeCliente;
 		this.rg = RG;
 		this.cpf = CPF;
 		this.telefone = numTelefone;

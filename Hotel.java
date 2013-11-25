@@ -39,7 +39,6 @@ public class Hotel{
 	nome = nomeHotel;
 	}
 
-	
 	public int getCnpj(){
 	return cnpj;
 	}
@@ -56,7 +55,6 @@ public class Hotel{
 	qndApt =qndAptHotel;
 	}
 
-	
 	public String getTelefone(){
 	return telefone;
 	}

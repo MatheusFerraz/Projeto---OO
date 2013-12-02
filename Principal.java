@@ -123,7 +123,7 @@ public class Principal {
 		System.out.println("\nO salario bruto desse funcionario é igual a: ");
 		System.out.print(salarioBrutoF);*/
 		
-		/**Testando a implementação da interface*/
+		/**Testando a implementação da interface na classe Gerente*/
 		
 		/*Instanciando um objeto da Classe Gerente
 		Gerente gerent = new Gerente(11111111, 3095252, 4500, "Jorge", "Gerente", "jorge@gmail.com", "(61) 3333-1919", "QD 201 CONJ 17 CS 02", 500);

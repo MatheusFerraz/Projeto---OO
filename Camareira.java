@@ -3,14 +3,14 @@ package hotelaria.func;
 public class Camareira extends Funcionario {
 	
 	//Especificando atributos adicionais
-	protected double gratificacao;
+	protected int gratificacao;
 	protected int horaExtra;
-	protected double valorHoraExtra;
+	protected int valorHoraExtra;
 	
 	//Constructor COM TODOS OS PARÂMETROS
 	public Camareira(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
-			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, double gratificacaoFuncionario,
-			int horaExtraFuncionario, double valorHoraExtraFuncionario){
+			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, int gratificacaoFuncionario,
+			int horaExtraFuncionario, int valorHoraExtraFuncionario){
 	
 		//Usando o super(...)
 		super(cpfFuncionario, rgFuncionario, salarioFuncionario, nomeFuncionario, cargoFuncionario, emailFuncionario, telefoneFuncionario,
@@ -22,11 +22,11 @@ public class Camareira extends Funcionario {
 		this.valorHoraExtra = valorHoraExtraFuncionario;
 	}
 
-	public double getGratificacao() {
+	public int getGratificacao() {
 		return gratificacao;
 	}
 
-	public void setGratificacao(double gratificacao) {
+	public void setGratificacao(int gratificacao) {
 		this.gratificacao = gratificacao;
 	}
 
@@ -38,11 +38,11 @@ public class Camareira extends Funcionario {
 		this.horaExtra = horaExtra;
 	}
 	
-	public double getValorHoraExtra() {
+	public int getValorHoraExtra() {
 		return valorHoraExtra;
 	}
 
-	public void setValorHoraExtra(double valorHoraExtra) {
+	public void setValorHoraExtra(int valorHoraExtra) {
 		this.valorHoraExtra = valorHoraExtra;
 	}
 

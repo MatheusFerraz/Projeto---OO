@@ -10,7 +10,7 @@ public class Gerente extends Funcionario implements ComunicacaoSup {
 	}
 	
 	//Constructor COM TODOS OS PARÂMETROS
-	public Gerente(double cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
+	public Gerente(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
 			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, double bonusMensalFuncionario){
 		
 		//Usando super(...)

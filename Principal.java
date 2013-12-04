@@ -10,7 +10,7 @@ public class Principal {
 		Apartamento apart = new Apartamento();
 		
 		//Chamando método para cadastrar Apartamento
-		apart.cadastrarApt("Suíde Presidencial", 258, 0);*/
+		apart.cadastrarApt("Suíde Presidencial", 258, "ocupado");*/
 		
 		/**Testando a Dependência entre Cliente e ConexaoBancoDados*/
 		

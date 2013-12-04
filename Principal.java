@@ -44,7 +44,7 @@ public class Principal {
 		/**Testando a herança para a classe Assistente*/
 		
 		/*Instanciando um objeto da classe Assistente
-		Assistente assistente = new Assistente(222222,111111,800,"Licurgo Almeida Reis","Assistente","licurgo.reis@gmail.com","(61) 8529 - 0000","Rua Rei da Sucata Nº 1444","Geral");
+		Assistente assistente = new Assistente(222222,111111,800,"Licurgo Almeida Reis","Assistente","licurgo.reis@gmail.com","(61) 8529 - 0000","Rua Rei da Sucata Nº 1444","Auxiliar Geral");
 		
 		//Declarando variáveis para receber os valores de retorno
 		String emailAssistente = assistente.getEmail();

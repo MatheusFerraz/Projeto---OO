@@ -3,7 +3,7 @@ package hotelaria.func;
 public class Gerente extends Funcionario implements ComunicacaoSup {
 	
 	//Especificando atributos adicionais
-	protected double bonusMensal;
+	protected int bonusMensal;
 	
 	//Construtor vazio
 	public Gerente(){
@@ -11,7 +11,7 @@ public class Gerente extends Funcionario implements ComunicacaoSup {
 	
 	//Constructor COM TODOS OS PARÂMETROS
 	public Gerente(int cpfFuncionario, int rgFuncionario, float salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
-			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, double bonusMensalFuncionario){
+			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, int bonusMensalFuncionario){
 		
 		//Usando super(...)
 		super(cpfFuncionario, rgFuncionario, salarioFuncionario, nomeFuncionario, cargoFuncionario, emailFuncionario, telefoneFuncionario,
@@ -21,11 +21,11 @@ public class Gerente extends Funcionario implements ComunicacaoSup {
 		this.bonusMensal = bonusMensalFuncionario;
 	}
 
-	public double getBonusMensal() {
+	public int getBonusMensal() {
 		return bonusMensal;
 	}
 
-	public void setBonusMensal(double bonusMensal) {
+	public void setBonusMensal(int bonusMensal) {
 		this.bonusMensal = bonusMensal;
 	}
 	

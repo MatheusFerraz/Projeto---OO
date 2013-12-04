@@ -21,9 +21,8 @@ public class GerenteTest {
 		System.out.println("Finalizando...");
 	}
 
-	@SuppressWarnings("deprecation")
 	@Test
-	public void test() {
+	public void testGetBonusMensal() {
 		Gerente gerente = new Gerente(222222,111111,4500,"Arnaldo Ximenes Ferraz","Gerente","arnaldo.ferraz@gmail.com","(61) 8307 - 2900","Rua Duque de Caxias Nº 569",1500);
 		assertEquals(gerente.getBonusMensal(),1500);
 	}

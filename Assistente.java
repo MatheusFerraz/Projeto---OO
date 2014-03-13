@@ -36,4 +36,4 @@ public class Assistente extends Funcionario {
 			return 600;
 		}
 	}
-}
+}//Fim da Classe Assistente

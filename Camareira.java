@@ -55,4 +55,4 @@ public class Camareira extends Funcionario {
 		this.setSalarioBruto(salarioBruto);
 		return salarioBruto;
 	}
-}
+}//Fim da Classe Camareira

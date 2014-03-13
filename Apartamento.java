@@ -77,4 +77,4 @@ public class Apartamento {
 	this.numero =numeroApt;
 	this.status = statusApt;
 	}
-}
+}//Fim da Classe Apartamento

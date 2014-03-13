@@ -50,4 +50,4 @@ public class Gerente extends Funcionario implements ComunicacaoSup {
 		msg2.postarInfo(informativoDoHotel, this.nome, contatos);
 		
 	}	
-}
+}//Fim da Classe Gerente

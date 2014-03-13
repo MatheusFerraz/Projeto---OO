@@ -8,4 +8,4 @@ public interface ComunicacaoSup {
 	//Assinatura do segundo método da interface
 	public void postarInformativoDoHotel(String informativoDoHotel, String[] contatos);
 	
-}
+}//Fim da Interface ComunicacaoSup

@@ -100,4 +100,4 @@ public class Hotel{
 	this.qndApt=qndAptHotel;
 	this.telefone = telefoneHotel;
 	}
-}
+}//Fim da Classe Hotel

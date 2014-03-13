@@ -132,4 +132,4 @@ public class Funcionario extends ServidorPrivado {
 	public double calcularSalarioBruto(){
 		return this.salarioBruto;
 	}
-}
+}//Fim da Classe Funcionario

@@ -136,5 +136,5 @@ public class Principal {
 		String[] funcionarios2 = {"Amélia", "James", "Cormane", "Gustavo", "Carlos", "Janice", "Pedro", "Carmelo", "Ovanda", "Aurenice", "Gisele"};
 		gerent.postarInformativoDoHotel("Durante esse mês de Novembro, haverá diversas palestras sobre hospitalidade para melhoria dos nossos serviços. Não perca a oportunidade! Sejam os melhores.",funcionarios2);*/	
 	}
-}
+}//Fim da Classe Principal
 	

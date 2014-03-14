@@ -24,4 +24,4 @@ public class Mensagem {
 			System.out.println(destinatarios[j] + "," + "tem um novo informativo do " + remetente + ":" + conteudoDoInformativo);
 		}
 	}
-}
+}//Fim da Classe Mensagem

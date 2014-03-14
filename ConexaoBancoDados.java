@@ -18,4 +18,4 @@ public class ConexaoBancoDados {
 	public static void setStatusConexaoBD(boolean statusConexaoBD) {
 		ConexaoBancoDados.statusConexaoBD = statusConexaoBD;
 	}
-}
+}//Fim da Classe ConexaoBancoDados

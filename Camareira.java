@@ -1,5 +1,6 @@
 package hotelaria.func;
 
+//Início da Classe Camareira
 public class Camareira extends Funcionario {
 	
 	//Especificando atributos adicionais

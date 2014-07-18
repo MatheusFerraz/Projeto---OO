@@ -1,16 +1,13 @@
-package hotelaria.func;
+package hotelaria.testes;
 
 import static org.junit.Assert.*;
+import hotelaria.entidades.Assistente;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-//Teste JUnit
-public class AssistenteTest {
-
-	public AssistenteTest() {
-	}
+public class AssistenteTeste {
 
 	@Before
 	public void setUp() throws Exception {
@@ -24,7 +21,7 @@ public class AssistenteTest {
 
 	@Test
 	public void testGetEspecialidade() {
-		Assistente assistente = new Assistente(222222,111111,800,"Licurgo Almeida Reis","Assistente","licurgo.reis@gmail.com","(61) 8529 - 0000","Rua Rei da Sucata Nº 1444","Auxiliar Geral");
+		Assistente assistente = new Assistente(222222,111111,800,"Licurgo Almeida Reis","Assistente","licurgo.reis@gmail.com","(61) 8529 - 0000","Rua Rei da Sucata NÂº 1444","Auxiliar Geral");
 		assertEquals(assistente.getEspecialidade(),"Auxiliar Geral");
 	} 
 

@@ -1,13 +1,12 @@
-package hotelaria.func;
+package hotelaria.testes;
 
 import static org.junit.Assert.*;
-
+import hotelaria.entidades.Cliente;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-//Teste JUnit
-public class ClienteTest {
+public class ClienteTeste {
 
 	@Before
 	public void setUp() throws Exception {

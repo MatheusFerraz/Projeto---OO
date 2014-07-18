@@ -1,13 +1,12 @@
-package hotelaria.func;
+package hotelaria.testes;
 
 import static org.junit.Assert.*;
-
+import hotelaria.entidades.Hotel;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-//Teste JUnit
-public class HotelTest {
+public class HotelTeste {
 
 	@Before
 	public void setUp() throws Exception {
@@ -42,4 +41,5 @@ public class HotelTest {
 		Hotel hotel = new Hotel("Monreale", 25678941, 100, "(62) 9647-2584");
 		assertEquals(hotel.getTelefone(), "(62) 9647-2584");
 	}
+	
 }

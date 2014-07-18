@@ -1,13 +1,12 @@
-package hotelaria.func;
+package hotelaria.testes;
 
 import static org.junit.Assert.*;
-
+import hotelaria.entidades.Apartamento;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-//Teste JUnit
-public class ApartamentoTest {
+public class ApartamentoTeste {
 
 	@Before
 	public void setUp() throws Exception {
@@ -21,21 +20,21 @@ public class ApartamentoTest {
 
 	@Test
 	public void testGetTipo() {
-		Apartamento apart = new Apartamento("Suíte Presidencial", 258, "Ocupado");
-		assertEquals(apart.getTipo(), "Suíte Presidencial");
+		Apartamento apart = new Apartamento("SuÃ­te Presidencial", 258, "Ocupado");
+		assertEquals(apart.getTipo(), "SuÃ­te Presidencial");
 	}
 
 
 	@Test
 	public void testGetNumero() {
-		Apartamento apart = new Apartamento("Suíte Presidencial", 258, "Ocupado");
+		Apartamento apart = new Apartamento("SuÃ­te Presidencial", 258, "Ocupado");
 		assertEquals(apart.getNumero(), 258);
 	}
 
 
 	@Test
 	public void testGetStatus() {
-		Apartamento apart = new Apartamento("Suíte Presidencial", 258, "Ocupado");
+		Apartamento apart = new Apartamento("SuÃ­te Presidencial", 258, "Ocupado");
 		assertEquals(apart.getStatus(), "Ocupado");
 	}
 

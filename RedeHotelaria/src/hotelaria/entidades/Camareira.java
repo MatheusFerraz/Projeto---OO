@@ -1,23 +1,18 @@
-package hotelaria.func;
+package hotelaria.entidades;
 
-//Início da Classe Camareira
 public class Camareira extends Funcionario {
 	
-	//Especificando atributos adicionais
 	protected int gratificacao;
 	protected int horaExtra;
 	protected int valorHoraExtra;
 	
-	//Constructor COM TODOS OS PARÂMETROS
 	public Camareira(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario,
 			String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario, int gratificacaoFuncionario,
 			int horaExtraFuncionario, int valorHoraExtraFuncionario){
 	
-		//Usando o super(...)
 		super(cpfFuncionario, rgFuncionario, salarioFuncionario, nomeFuncionario, cargoFuncionario, emailFuncionario, telefoneFuncionario,
 				enderecoFuncionario);
 		
-		//Lidando com os atributos adicionais
 		this.gratificacao = gratificacaoFuncionario;
 		this.horaExtra = horaExtraFuncionario;
 		this.valorHoraExtra = valorHoraExtraFuncionario;
@@ -47,7 +42,6 @@ public class Camareira extends Funcionario {
 		this.valorHoraExtra = valorHoraExtra;
 	}
 
-	//Método mais especializado para calcular o Salário Bruto de um Camareira
 	public double calcularSalarioBruto(){
 		double gratificacao = this.gratificacao;
 		double horaExtra = this.horaExtra;
@@ -56,4 +50,5 @@ public class Camareira extends Funcionario {
 		this.setSalarioBruto(salarioBruto);
 		return salarioBruto;
 	}
-}//Fim da Classe Camareira
+	
+}

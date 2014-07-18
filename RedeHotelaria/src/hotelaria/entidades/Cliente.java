@@ -1,8 +1,7 @@
-package hotelaria.func;
+package hotelaria.entidades;
 
 public class Cliente {
 
-	//Especificando atributos
 	private String nome;
 	private int rg;
 	private int cpf;
@@ -10,9 +9,8 @@ public class Cliente {
 	private String email;
 	private String entrada;
 	private String saida;
-	Apartamento apartamento;//Associação entre Apartamento e Cliente
+	Apartamento apartamento;
 	
-	//Constructor SEM PARÂMETROS
 	public Cliente() {
 		this.nome = "Sem nome";
 		this.rg = 0;
@@ -23,7 +21,6 @@ public class Cliente {
 		this.saida = "sem saida";
 	}
 	
-	//Construtor COM QUATRO PARÂMETROS
 	public Cliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente){
 		this.nome = nomeCliente;
 		this.rg = RG;
@@ -34,7 +31,6 @@ public class Cliente {
 		this.saida = "sem saida";
 	}
 	
-	//Constructor COM TODOS OS PARÂMETROS
 	public Cliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente, String horaEntrada, String horaSaida){
 		this.nome = nomeCliente;
 		this.rg = RG;
@@ -45,7 +41,6 @@ public class Cliente {
 		this.saida = horaSaida;
 	}
 	
-	//Métodos de Acesso e Modificação
 	public String getNome() {
 		return nome;
 	}
@@ -111,13 +106,11 @@ public class Cliente {
 		this.apartamento = apartamento;
 	}
 
-	//Método cadastrarCliente
 	public void cadastarCliente(String nomeCliente, int RG, int CPF, String numTelefone, String emailCliente, String horaEntrada, String horaSaida){
 		
-		//Dependência entre Cliente e ConexaoBancoDados
-		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +  
+		System.out.println("Foi chamado um mÃ©todo de classe (ou static)  Classe ConexaoBancoDados" +  
 		"visando conectar o banco para entrada dos dados de cadastro do cliente.");
-		ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
+		ConexaoBancoDados.setStatusConexaoBD(true);
 		
 		this.nome = nomeCliente;
 		this.rg = RG;
@@ -128,4 +121,4 @@ public class Cliente {
 		this.saida = horaSaida;
 	}
 	
-}//Fim da Classe Cliente
+}

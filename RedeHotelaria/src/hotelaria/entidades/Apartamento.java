@@ -1,13 +1,12 @@
-package hotelaria.func;
+package hotelaria.entidades;
 
 public class Apartamento {
 
-	//Especificação dos atributos
 	protected String tipo;
 	protected int numero;
 	protected String status;
-	protected Hotel hotel;//Composição entre Hotel e Apartamento
-	Cliente cliente;//Associação entre Apartamento e Cliente
+	protected Hotel hotel;
+	Cliente cliente;
 
 	public Hotel getHotel() {
 		return hotel;
@@ -17,21 +16,18 @@ public class Apartamento {
 		this.hotel = hotel;
 	}
 
-	//Constructor SEM PARÂMETROS
 	public Apartamento(){
 		this.tipo = "sem tipo";
 		this.numero = 0;
 		this.status = "sem informacao";
 	}
 
-	//Constructor COM TODOS OS PARÂMETROS
 	public Apartamento(String tipoApt,int numeroApt, String statusApt){
 		this.tipo = tipoApt;
 		this.numero =numeroApt;
 		this.status = statusApt;
 	}
 
-	//Métodos de Acesso e Modificação
 	public String getTipo(){
 	return tipo;
 	}
@@ -65,16 +61,15 @@ public class Apartamento {
 		this.cliente = cliente;
 	}
 
-	//Método cadastrarApt
 	public void cadastrarApt(String tipoApt,int numeroApt, String statusApt){
 		
-	//Dependência entre Apartamento e ConexaoBancoDados
-	System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +
+	System.out.println("Foi chamado um mÃ©todo de classe (ou static)  Classe ConexaoBancoDados" +
 	"visando conectar o banco para entrada dos dados de cadastro do apartamento.");
-	ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
+	ConexaoBancoDados.setStatusConexaoBD(true);
 	
 	this.tipo = tipoApt;
 	this.numero =numeroApt;
 	this.status = statusApt;
 	}
-}//Fim da Classe Apartamento
+	
+}

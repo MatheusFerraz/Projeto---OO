@@ -1,8 +1,7 @@
-package hotelaria.func;
+package hotelaria.entidades;
 
 public class Funcionario extends ServidorPrivado {
 	
-	//Especificando Atributos da Classe Funcionario
 	protected int cpf;
 	protected int rg;
 	protected double salarioBruto;
@@ -11,9 +10,8 @@ public class Funcionario extends ServidorPrivado {
 	protected String email;
 	protected String telefone;
 	protected String endereco;
-	protected Hotel hotel;//Composição entre Hotel e Funcionário
+	protected Hotel hotel;
 	
-	//Constructor SEM PARÂMETROS
 	public Funcionario() {
 		this.cpf = 0;
 		this.rg = 0;
@@ -25,7 +23,6 @@ public class Funcionario extends ServidorPrivado {
 		this.endereco = "sem endereco";
 	}
 	
-	//Constructor COM SETE PARÂMETROS
 	public Funcionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario, String enderecoFuncionario){
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
@@ -37,7 +34,6 @@ public class Funcionario extends ServidorPrivado {
 		this.endereco = enderecoFuncionario;
 	}
 
-	//Métodos de Acesso e Modificação
 	public int getCpf() {
 		return cpf;
 	}
@@ -110,13 +106,11 @@ public class Funcionario extends ServidorPrivado {
 		this.hotel = hotel;
 	}
 
-	//Método que cadastra um funcionario
 	public void cadastrarFuncionario(int cpfFuncionario, int rgFuncionario, double salarioFuncionario, String nomeFuncionario, String cargoFuncionario, String emailFuncionario, String telefoneFuncionario){
 		
-		//Dependência entre Funcionario e ConexaoBancoDados
-		System.out.println("Foi chamado um método de classe (ou static)  Classe ConexaoBancoDados" +
-		"visando conectar o banco para entrada dos dados de cadastro do funcionário.");
-		ConexaoBancoDados.setStatusConexaoBD(true);//Chamada do método diretamente pelo nome da Classe
+		System.out.println("Foi chamado um mÃ©todo de classe (ou static)  Classe ConexaoBancoDados" +
+		"visando conectar o banco para entrada dos dados de cadastro do funcionÃ¡rio.");
+		ConexaoBancoDados.setStatusConexaoBD(true);
 		
 		this.cpf = cpfFuncionario;
 		this.rg = rgFuncionario;
@@ -126,10 +120,9 @@ public class Funcionario extends ServidorPrivado {
 		this.email = emailFuncionario;
 		this.telefone = telefoneFuncionario;
 	}
-
 	
-	//Método para calcular Salario Bruto
 	public double calcularSalarioBruto(){
 		return this.salarioBruto;
 	}
-}//Fim da Classe Funcionario
+	
+}
